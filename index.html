@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Thank You Letter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Donation Letter Generator</h2>
+
+        <div class="form-section">
+
+            <label for="titleSelect">Title:</label>
+            <select id="titleSelect">
+        <option value="Mr">Mr</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Miss">Miss</option>
+      </select>
+
+
+            <label for="donorName">Donor Name:</label>
+            <input type="text" id="donorName" placeholder="Enter donor's name">
+
+            <label for="donationAmount">Amount Donated (₦):</label>
+            <input type="number" id="donationAmount" placeholder="Enter amount">
+
+            <button id="generateBtn">Generate Letter</button>
+        </div>
+
+        <div class="letter-section" id="letterSection">
+            <h3>Generated Letter:</h3>
+            <div id="letterContent" class="letter">
+                <!-- Dynamic letter appears here -->
+            </div>
+            <button id="printBtn" style="display:none;">Print Letter</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
